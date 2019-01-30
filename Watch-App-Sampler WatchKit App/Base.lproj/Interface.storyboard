@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--ItemListController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="ItemListController" id="AgC-eL-Hgc" customClass="ItemListController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="yGB-ex-JpU">
+                            <items>
+                                <tableRow identifier="ItemRowController" id="DlJ-Wc-hO5" customClass="ItemRowController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="45" alignment="left" id="RXH-ea-NPi">
+                                        <items>
+                                            <imageView width="25" height="25" alignment="left" verticalAlignment="center" image="item_type_0" id="oxy-cH-JLc"/>
+                                            <group width="0.84999999999999998" height="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="0.0" id="S2Y-O8-gmp">
+                                                <items>
+                                                    <label width="1" alignment="left" verticalAlignment="center" text="Title" numberOfLines="3" id="7fw-w3-OoY">
+                                                        <fontDescription key="font" type="system" pointSize="10"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="3" right="0.0" top="5" bottom="5"/>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="oxy-cH-JLc" id="tR9-Kg-8fx"/>
+                                        <outlet property="titleLabel" destination="7fw-w3-OoY" id="Jty-4l-kDr"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="yGB-ex-JpU" id="QU0-dN-23q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="135" y="-651"/>
+        </scene>
+        <!--MoviePlayerController-->
+        <scene sceneID="fGW-zO-dPj">
+            <objects>
+                <controller identifier="MoviePlayerController" id="Tfe-0X-9rQ" customClass="MoviePlayerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <movie width="1" height="100" alignment="center" id="rmm-I5-2hX"/>
+                        <button width="1" alignment="center" title="Prepare Mp3" id="F3t-fA-AAj">
+                            <connections>
+                                <action selector="mp3PrepareAction" destination="Tfe-0X-9rQ" id="KLg-ND-7Xg"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Prepare Mp4" id="Ff7-Xo-USe">
+                            <connections>
+                                <action selector="mp4PrepareAction" destination="Tfe-0X-9rQ" id="SeW-CV-5eN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="movie" destination="rmm-I5-2hX" id="CX0-Lg-3zi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-887" y="210"/>
+        </scene>
+        <!--MediaPlayerController-->
+        <scene sceneID="7Yv-Z6-TEc">
+            <objects>
+                <controller identifier="MediaPlayerController" id="Dj4-4f-zDI" customClass="MediaPlayerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="center" title="Play Mp3" id="vcD-zM-BfF">
+                            <connections>
+                                <action selector="mp3PlayAction" destination="Dj4-4f-zDI" id="dXj-8h-MSA"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Play Mp4" id="gsm-fM-uuo">
+                            <connections>
+                                <action selector="mp4PlayAction" destination="Dj4-4f-zDI" id="1y0-Rh-WIR"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="SyY-KU-e9k"/>
+                        <button width="1" alignment="left" title="Movie Plyer" id="zGm-7U-cjX">
+                            <connections>
+                                <segue destination="Tfe-0X-9rQ" kind="push" id="nos-T0-qzo"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="InlineMovie Plyer" id="F30-cU-PHh">
+                            <connections>
+                                <segue destination="glc-jF-fuy" kind="push" id="5m3-AO-s64"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-712" y="-178"/>
+        </scene>
+        <!--AccelerometerController-->
+        <scene sceneID="4cB-cQ-Zib">
+            <objects>
+                <controller identifier="AccelerometerController" id="U2r-TI-A3b" customClass="AccelerometerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="4xw-pZ-cte">
+                            <items>
+                                <label alignment="left" text="x" id="g9a-l4-Zv6">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="q6l-zN-6wb"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Hpw-qi-Jyx">
+                            <items>
+                                <label alignment="left" text="y" id="NT5-9W-Rb0">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="w3N-bD-zLw"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="VAo-ns-bvj">
+                            <items>
+                                <label alignment="left" text="z" id="er2-MS-h6C">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="olk-SN-eej"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="XLabel" destination="q6l-zN-6wb" id="ZRA-pd-63e"/>
+                        <outlet property="YLabel" destination="w3N-bD-zLw" id="xpc-Ge-sjn"/>
+                        <outlet property="ZLabel" destination="olk-SN-eej" id="1ds-Rm-xDO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-711" y="800"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="foh-4h-mAh">
+            <objects>
+                <notificationController id="8ZM-Lk-0LW">
+                    <items>
+                        <label alignment="left" text="静态标题" id="2qG-VY-sjj"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="itemExpired" id="nx4-MG-Rqd"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="2qG-VY-sjj" id="beR-2e-TGR"/>
+                        <segue destination="4hm-SI-rL8" kind="relationship" relationship="dynamicNotificationInterface" id="FmZ-XO-ol7"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-721" y="1816"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="rls-s5-Rwl">
+            <objects>
+                <controller id="4hm-SI-rL8" customClass="NotificationController" customModule="Watch_App_Sampler_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="动态标题" id="pKm-Q5-Ckw">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                        </label>
+                        <label width="1" alignment="left" text="内容" numberOfLines="0" id="xZP-2o-KtR">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="contentLabel" destination="xZP-2o-KtR" id="OEf-5O-qNg"/>
+                        <outlet property="titleLabel" destination="pKm-Q5-Ckw" id="3Zu-UK-Sq1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-323" y="1816"/>
+        </scene>
+        <!--ProgressController-->
+        <scene sceneID="BVH-i2-Evf">
+            <objects>
+                <controller identifier="ProgressController" hidesWhenLoading="NO" id="xjN-OY-4BD" customClass="ProgressController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <group width="120" height="140" alignment="center" verticalAlignment="center" backgroundImage="activity-0" contentMode="scaleAspectFill" id="wiP-BB-wfK">
+                            <items>
+                                <picker width="1" height="30" alignment="left" verticalAlignment="center" alpha="0.59999999999999998" id="5x8-18-doa"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="5x8-18-doa" id="Uj2-i0-4L7"/>
+                        <outlet property="progressGroup" destination="wiP-BB-wfK" id="AbX-Xk-u7o"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="355" y="-177"/>
+        </scene>
+        <!--PickerController-->
+        <scene sceneID="Tr7-Jm-XjX">
+            <objects>
+                <controller identifier="PickerController" id="AkK-kj-Sej" customClass="PickerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <picker height="100" alignment="left" id="DKF-K2-kfz">
+                            <connections>
+                                <action selector="listPickerSelect:" destination="AkK-kj-Sej" id="Msa-uk-sH1"/>
+                            </connections>
+                        </picker>
+                        <picker height="100" alignment="left" style="stack" focusStyle="stack" id="Z9T-LF-hvi">
+                            <connections>
+                                <action selector="stackPickerSelect:" destination="AkK-kj-Sej" id="5rv-gq-NcF"/>
+                            </connections>
+                        </picker>
+                        <picker height="100" alignment="left" style="sequence" focusStyle="sequence" id="ckP-cF-vpc">
+                            <connections>
+                                <action selector="sequencePickerSelect:" destination="AkK-kj-Sej" id="Yhg-3y-bnP"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="listPicker" destination="DKF-K2-kfz" id="TPl-xr-XcF"/>
+                        <outlet property="sequencePicker" destination="ckP-cF-vpc" id="y6W-iB-dNr"/>
+                        <outlet property="stackPicker" destination="Z9T-LF-hvi" id="d2c-Lz-rUb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="135" y="-99"/>
+        </scene>
+        <!--MenusController-->
+        <scene sceneID="ybn-xE-vOL">
+            <objects>
+                <controller identifier="MenusController" id="UG4-bW-LkG" customClass="MenusController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="BgB-73-gXo">
+                            <string key="text">Please Long Press The Screen
+</string>
+                        </label>
+                    </items>
+                    <menu key="menu" id="e4a-rw-M5j">
+                        <items>
+                            <menuItem title="Invest" icon="add" id="69x-Na-h9N">
+                                <connections>
+                                    <action selector="menuActionInvest" destination="UG4-bW-LkG" id="erG-ul-hq8"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Notification" icon="info" id="XTQ-Rx-UI8">
+                                <connections>
+                                    <action selector="menuActionNotification" destination="UG4-bW-LkG" id="kX0-MO-Fca"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Question" icon="maybe" id="hgY-Jv-5BO" userLabel="Question">
+                                <connections>
+                                    <action selector="menuActionQuestion" destination="UG4-bW-LkG" id="ppC-7k-fBq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Share" icon="share" id="QC3-K7-oiv" userLabel="Share">
+                                <connections>
+                                    <action selector="menuActionShare" destination="UG4-bW-LkG" id="gFm-VK-Kbi"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="585" y="-177"/>
+        </scene>
+        <!--AnimationController-->
+        <scene sceneID="gS2-nQ-NFS">
+            <objects>
+                <controller identifier="AnimationController" id="JgX-L7-loC" customClass="AnimationController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <imageView width="60" height="60" alignment="center" image="ghost" id="bS6-jU-ih5"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Animate" id="9o0-MG-Dp8">
+                            <connections>
+                                <action selector="playAnimation" destination="JgX-L7-loC" id="mNf-oU-tQR"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ghostImage" destination="bS6-jU-ih5" id="GIe-zY-3DQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="829" y="-177"/>
+        </scene>
+        <!--HapticTypeController-->
+        <scene sceneID="Pfj-Yp-rGY">
+            <objects>
+                <controller identifier="HapticTypeController" id="wTM-ps-ZiH" customClass="HapticTypeController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="100" alignment="left" text="Haptic Types" textAlignment="center" numberOfLines="0" id="Em4-58-qNa"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Play" id="wbs-6a-T51">
+                            <connections>
+                                <action selector="tapticEnginePlay" destination="wTM-ps-ZiH" id="YCL-AX-cDV"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="typeLabel" destination="Em4-58-qNa" id="XDq-R3-mil"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1127" y="-173"/>
+        </scene>
+        <!--TextVoiceInputController-->
+        <scene sceneID="LgU-vZ-cYg">
+            <objects>
+                <controller identifier="TextVoiceInputController" id="WkU-bY-Og7" customClass="TextVoiceInputController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Input Content..." id="WyP-ak-aH9">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Input" id="itn-yi-Uzg">
+                            <connections>
+                                <action selector="textVoiceInputAction" destination="WkU-bY-Og7" id="M6g-uZ-7k2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="contentLabel" destination="WyP-ak-aH9" id="sVp-xD-YxN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-505" y="-177"/>
+        </scene>
+        <!--MessageController-->
+        <scene sceneID="Zo3-1l-7E9">
+            <objects>
+                <controller identifier="MessageController" id="rED-Ao-7md" customClass="MessageController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Receive Message..." numberOfLines="0" id="c3L-zu-zf5">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Send To iPhone" id="Zuj-UU-hix">
+                            <connections>
+                                <action selector="sendMessageToiPhoneAction" destination="rED-Ao-7md" id="F0l-dl-dbr"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="contentLabel" destination="c3L-zu-zf5" id="8DV-ga-3ch"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-86" y="-177"/>
+        </scene>
+        <!--RecordController-->
+        <scene sceneID="40j-MC-3y6">
+            <objects>
+                <controller identifier="RecordController" id="e3G-RN-ZpL" customClass="RecordController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Record" id="5gG-jJ-dDd"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-297" y="-177"/>
+        </scene>
+        <!--GyroscopeController-->
+        <scene sceneID="pV3-WE-FsA">
+            <objects>
+                <controller identifier="GyroscopeController" id="YpR-3C-Z4C" customClass="GyroscopeController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="VB3-WK-Ssx">
+                            <items>
+                                <label alignment="left" text="x" id="Rlr-Tf-ORm">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="Ydd-dt-71z"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="9U5-J5-TXw">
+                            <items>
+                                <label alignment="left" text="y" id="IAE-qG-zNn">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="0R8-Qs-Mbj"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="bQe-SX-xgj">
+                            <items>
+                                <label alignment="left" text="z" id="eYu-8A-hVC">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="VSP-v2-HV1"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="XLabel" destination="Ydd-dt-71z" id="lTD-DO-fpm"/>
+                        <outlet property="YLabel" destination="0R8-Qs-Mbj" id="AvT-te-D2u"/>
+                        <outlet property="ZLabel" destination="VSP-v2-HV1" id="PvQ-7C-DyI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-465" y="794"/>
+        </scene>
+        <!--MagnetometerController-->
+        <scene sceneID="cfB-N3-UZn">
+            <objects>
+                <controller identifier="MagnetometerController" id="7zR-go-C0c" customClass="MagnetometerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="y1r-iu-jjI">
+                            <items>
+                                <label alignment="left" text="x" id="LfA-ml-cGb">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="6jU-aZ-ZJo"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="twz-2N-Ak8">
+                            <items>
+                                <label alignment="left" text="y" id="pZz-T6-nXb">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="reR-gl-Hgv"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="hOK-j2-lSe">
+                            <items>
+                                <label alignment="left" text="z" id="NG7-na-TG7">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="BSC-Sk-128"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="XLabel" destination="6jU-aZ-ZJo" id="OCe-V5-lot"/>
+                        <outlet property="YLabel" destination="reR-gl-Hgv" id="1H3-MT-9l6"/>
+                        <outlet property="ZLabel" destination="BSC-Sk-128" id="nso-wZ-XZy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-196" y="794"/>
+        </scene>
+        <!--DeviceMotionController-->
+        <scene sceneID="BUx-ce-C2f">
+            <objects>
+                <controller identifier="DeviceMotionController" id="u5p-Oo-pxh" customClass="DeviceMotionController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Q0G-Tj-yaP">
+                            <items>
+                                <label alignment="left" text="Roll" id="Zgr-CE-zgq">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="9XK-oO-mq0"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Mf7-pf-TU5">
+                            <items>
+                                <label alignment="left" text="Pitch" id="tyZ-3v-5Ld">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="j2H-zs-qVh"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="XYD-dW-ghr">
+                            <items>
+                                <label alignment="left" text="Yaw" id="tze-68-hVe">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="U0X-ng-QHm"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="cQl-5X-hSO">
+                            <items>
+                                <label alignment="left" text="RotX" id="4Vd-pX-uhX">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="sH7-be-ZIJ"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="iQX-km-Nvx">
+                            <items>
+                                <label alignment="left" text="RotY" id="kKx-ZY-nFb">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="HGT-1p-oTA"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="9w5-os-d9Q">
+                            <items>
+                                <label alignment="left" text="RotZ" id="gaW-Ax-7fO">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="UY3-J9-RYn"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="4AW-6C-5G7">
+                            <items>
+                                <label height="18" alignment="left" text="GraX" id="Zbe-xC-9e6">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="g3t-gP-Ddd"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="yr0-eY-llF">
+                            <items>
+                                <label alignment="left" text="GraY" id="Vod-2d-7Q8">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="QqL-r7-Yc5"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="rX8-nX-egn">
+                            <items>
+                                <label alignment="left" text="GraZ" id="6jC-9y-tq9">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="U3h-QP-rUp"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="eDk-gc-twk">
+                            <items>
+                                <label alignment="left" text="AccX" id="iOe-0t-afF">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="zxh-BA-ub0"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="cZv-z7-BOd">
+                            <items>
+                                <label alignment="left" text="AccY" id="tpm-mo-dM0">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="t1j-F1-Agc"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Foj-bh-Gyk">
+                            <items>
+                                <label alignment="left" text="AccZ" id="MVq-yQ-boM">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="wRc-FK-IH3"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="uH3-pc-vyd">
+                            <items>
+                                <label alignment="left" text="MagX" id="n8D-zs-UqX">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="27E-bf-SCT"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="WLw-I7-OEz">
+                            <items>
+                                <label alignment="left" text="MagY" id="TkA-Vj-YRy">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="ONz-bh-SKw"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="0yI-HX-MfT">
+                            <items>
+                                <label alignment="left" text="MagZ" id="2gW-fL-TbT">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="HUt-1q-DX7"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="d0R-zu-lX9">
+                            <items>
+                                <label alignment="left" text="MagAcc" id="d87-oF-0Bc">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="NHp-6i-gKR"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="KLc-k1-EJP">
+                            <items>
+                                <label alignment="left" text="Heading" id="Cnw-pk-mjQ">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="xtc-yV-gcF"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="AccXLabel" destination="zxh-BA-ub0" id="tOy-OG-Veh"/>
+                        <outlet property="AccYLabel" destination="t1j-F1-Agc" id="Gn5-fC-53Y"/>
+                        <outlet property="AccZLabel" destination="wRc-FK-IH3" id="Gn8-Lg-ZEU"/>
+                        <outlet property="GraXLabel" destination="g3t-gP-Ddd" id="S7q-YA-sNf"/>
+                        <outlet property="GraYLabel" destination="QqL-r7-Yc5" id="gBS-Ff-uUd"/>
+                        <outlet property="GraZLabel" destination="U3h-QP-rUp" id="jOQ-Jc-Vm4"/>
+                        <outlet property="MagAccLabel" destination="NHp-6i-gKR" id="wC1-tR-Jou"/>
+                        <outlet property="MagXLabel" destination="27E-bf-SCT" id="Hzx-s0-lWi"/>
+                        <outlet property="MagYLabel" destination="ONz-bh-SKw" id="W5n-md-t7d"/>
+                        <outlet property="MagZLabel" destination="HUt-1q-DX7" id="axM-Dv-OcU"/>
+                        <outlet property="PitchLabel" destination="j2H-zs-qVh" id="MMl-9o-Um3"/>
+                        <outlet property="RollLabel" destination="9XK-oO-mq0" id="zxq-IA-0cn"/>
+                        <outlet property="RotXLabel" destination="sH7-be-ZIJ" id="hpn-LI-plX"/>
+                        <outlet property="RotYLabel" destination="HGT-1p-oTA" id="fNN-cx-Zbs"/>
+                        <outlet property="RotZLabel" destination="UY3-J9-RYn" id="VHy-3F-7on"/>
+                        <outlet property="YawLabel" destination="U0X-ng-QHm" id="zgg-Cg-bpQ"/>
+                        <outlet property="headingLabel" destination="xtc-yV-gcF" id="nZQ-iP-hNV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="82" y="928"/>
+        </scene>
+        <!--MotionActivityController-->
+        <scene sceneID="Jmc-UA-tEH">
+            <objects>
+                <controller identifier="MotionActivityController" id="Axb-61-9Wr" customClass="MotionActivityController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Current Activity Is:" textAlignment="left" numberOfLines="0" id="2hX-Zi-FB1">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <label width="1" alignment="left" text="Value" textAlignment="center" numberOfLines="0" id="wJg-J9-CKw">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="activityLabel" destination="wJg-J9-CKw" id="F9M-er-wfX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="333" y="794"/>
+        </scene>
+        <!--PedometerController-->
+        <scene sceneID="Yb7-8s-bsP">
+            <objects>
+                <controller identifier="PedometerController" id="9QW-JL-Syw" customClass="PedometerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="YTC-dM-VUY">
+                            <items>
+                                <label alignment="left" text="Step" id="a5o-xJ-7hy">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="bCu-fz-Yjg"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="95q-i0-Mrf">
+                            <items>
+                                <label alignment="left" text="Distance" id="Yns-3H-iWe">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="FKL-qo-XdH"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="J1v-Fm-TGO">
+                            <items>
+                                <label alignment="left" text="Asend" id="Em1-mW-eD9">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="6yP-Lc-FmO"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="nPI-wY-Ja7">
+                            <items>
+                                <label alignment="left" text="Pace" id="H4G-oy-BrX">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="egO-E1-P8C"/>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="asendLabel" destination="6yP-Lc-FmO" id="GJQ-cu-QE9"/>
+                        <outlet property="distanceLabel" destination="FKL-qo-XdH" id="eGT-PE-v4O"/>
+                        <outlet property="paceLabel" destination="egO-E1-P8C" id="hDv-zc-s2w"/>
+                        <outlet property="stepLabel" destination="bCu-fz-Yjg" id="CRB-lH-dWk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="567" y="794"/>
+        </scene>
+        <!--LocationController-->
+        <scene sceneID="ASz-a1-79e">
+            <objects>
+                <controller identifier="LocationController" id="YhW-TN-KrW" customClass="LocationController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="mgT-k1-UAy">
+                            <items>
+                                <label alignment="left" text="Latitude" id="xfb-qZ-hFM">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="pxL-mz-7ko"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="cub-Tm-3Ov">
+                            <items>
+                                <label alignment="left" text="Longtitude" id="tiD-kf-CcG">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="fa9-Gk-WcS"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="LKc-Uj-MZK">
+                            <items>
+                                <label alignment="left" text="Altitude" id="bZa-Dj-IIH">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="eqf-uW-uSI"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Xdb-kD-bVz">
+                            <items>
+                                <label alignment="left" text="Floor" id="8d1-CG-7lP">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="3oA-5V-zSS"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="wSD-uk-pwi">
+                            <items>
+                                <label alignment="left" text="Speed" id="7cW-hf-tX5">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="y6h-Ld-gY8"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="sCc-xK-nRh">
+                            <items>
+                                <label alignment="left" text="Course" id="i6b-iR-puU">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="DOV-cq-sys"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="i7t-aC-0aQ">
+                            <items>
+                                <label height="18" alignment="left" text="HorAcc" id="Djr-Yr-rJS">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="D2J-zL-K2F"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="h9d-YT-zCs">
+                            <items>
+                                <label alignment="left" text="VerAcc" id="bbD-cJ-zvm">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="ZWb-wG-JwN"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="qmH-OB-Fj9">
+                            <items>
+                                <label alignment="left" text="Time" id="jY8-Kh-zej">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="8i3-jt-oeT"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="HorAccLabel" destination="D2J-zL-K2F" id="MZa-wV-foz"/>
+                        <outlet property="VerAccLabel" destination="ZWb-wG-JwN" id="Wna-CE-IRH"/>
+                        <outlet property="altitudeLabel" destination="eqf-uW-uSI" id="lQC-Km-pSE"/>
+                        <outlet property="courseLabel" destination="DOV-cq-sys" id="QNR-5s-Rkd"/>
+                        <outlet property="floorLabel" destination="3oA-5V-zSS" id="69M-xd-sYA"/>
+                        <outlet property="latitudeLabel" destination="pxL-mz-7ko" id="mXT-7G-sOD"/>
+                        <outlet property="longitudeLabel" destination="fa9-Gk-WcS" id="gkv-n5-mPq"/>
+                        <outlet property="speedLabel" destination="y6h-Ld-gY8" id="F9V-W5-Nuh"/>
+                        <outlet property="timeLabel" destination="8i3-jt-oeT" id="F8Y-ki-wUd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="791" y="822.5"/>
+        </scene>
+        <!--MapController-->
+        <scene sceneID="BkE-zS-qFF">
+            <objects>
+                <controller identifier="MapController" id="4Sm-Uw-rLo" customClass="MapController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <map height="110" alignment="left" id="VGb-3w-aE7"/>
+                        <button width="1" height="35" alignment="left" title="Change Region" id="f4a-bR-oFB">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="changgeRegionAction" destination="4Sm-Uw-rLo" id="piH-uv-kqw"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="35" alignment="left" title="+Annotation" id="Hp2-OI-DyI">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="addAnnotationAction" destination="4Sm-Uw-rLo" id="Xf5-7Y-HKz"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="35" alignment="left" title="-Annotation" id="ABW-oa-6iw">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="removeAllAnnotationAction" destination="4Sm-Uw-rLo" id="zNB-bI-OIT"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="VGb-3w-aE7" id="aOv-HU-CKN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1011" y="802"/>
+        </scene>
+        <!--HealthController-->
+        <scene sceneID="m0G-I7-rQC">
+            <objects>
+                <controller identifier="HealthController" hidesWhenLoading="NO" id="lr2-ZA-YxP" customClass="HealthController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="f5b-0X-4Kx">
+                            <items>
+                                <imageView alignment="left" image="heart" id="ZUC-lY-Z4W"/>
+                                <group width="1" alignment="left" id="ugG-NE-VOy">
+                                    <items>
+                                        <label alignment="left" text="---" textAlignment="left" minimumScaleFactor="0.29999999999999999" id="LDp-Wh-qXc">
+                                            <fontDescription key="font" type="system" pointSize="40"/>
+                                        </label>
+                                        <label alignment="left" text="BPM" id="2SP-Ph-FxG">
+                                            <color key="textColor" red="0.86132884030000001" green="0.058584794400000001" blue="0.11313973369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Start" id="KxW-Hx-iwR">
+                            <connections>
+                                <action selector="fetchBtnTapped" destination="lr2-ZA-YxP" id="5QY-0e-a2c"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="LDp-Wh-qXc" id="oyD-V2-Yhe"/>
+                        <outlet property="startBtn" destination="KxW-Hx-iwR" id="IS5-uK-amt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-752" y="1413"/>
+        </scene>
+        <!--Quatz2DController-->
+        <scene sceneID="FVx-mH-PDZ">
+            <objects>
+                <controller identifier="Quatz2DController" id="eZC-Uh-gg7" customClass="Quatz2DController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <imageView height="110" alignment="left" id="0dR-yB-j8w"/>
+                        <group width="1" alignment="left" id="yvd-wG-xE1">
+                            <items>
+                                <button width="0.5" height="40" alignment="left" verticalAlignment="bottom" title="Context" id="hJ9-fB-bBY">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="drawAction" destination="eZC-Uh-gg7" id="DJC-pf-aKc"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Path" id="UPM-rZ-gI6">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                    <connections>
+                                        <action selector="drawPathAction" destination="eZC-Uh-gg7" id="biE-rA-d08"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="0dR-yB-j8w" id="TEs-0U-rON"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-507" y="1409"/>
+        </scene>
+        <!--GradationController-->
+        <scene sceneID="qe0-nO-8lP">
+            <objects>
+                <controller identifier="GradationController" id="FBy-zD-hjp" customClass="GradationController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <imageView height="110" alignment="left" id="krz-3n-N7A"/>
+                        <group width="1" alignment="center" id="QnG-v9-orP">
+                            <items>
+                                <button width="0.29999999999999999" height="1" alignment="center" verticalAlignment="bottom" title="□" id="3v7-kS-SAP">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="drawGradientRectAction" destination="FBy-zD-hjp" id="Tdq-Ef-InN"/>
+                                    </connections>
+                                </button>
+                                <button width="0.29999999999999999" height="1" alignment="center" title="○" id="CRA-in-4ej">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                    <connections>
+                                        <action selector="drawGradientRoundAction" destination="FBy-zD-hjp" id="xBf-EI-KDc"/>
+                                    </connections>
+                                </button>
+                                <button width="0.29999999999999999" height="1" alignment="center" title="田" id="FUC-st-FWO">
+                                    <connections>
+                                        <action selector="drawGradientClipRectAction" destination="FBy-zD-hjp" id="SRr-hM-I6E"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="krz-3n-N7A" id="Uke-Gr-Coh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-244" y="1409"/>
+        </scene>
+        <!--OpenURLController-->
+        <scene sceneID="XN1-Vj-sAW">
+            <objects>
+                <controller identifier="OpenURLController" id="KeI-uV-EjD" customClass="OpenURLController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Tel" id="NVu-GI-plo">
+                            <connections>
+                                <action selector="openTelAction" destination="KeI-uV-EjD" id="jLP-ez-FcL"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="SMS" id="7Xv-WE-Z9W">
+                            <connections>
+                                <action selector="openMessageAction" destination="KeI-uV-EjD" id="8RZ-fd-wRW"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="5" y="1413"/>
+        </scene>
+        <!--RequestSessionController-->
+        <scene sceneID="h7S-ba-LH8">
+            <objects>
+                <controller identifier="RequestSessionController" id="dIX-qT-oFA" customClass="RequestSessionController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" height="110" alignment="left" id="nPk-oq-TVK"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Reques" id="tns-H4-D9d">
+                            <connections>
+                                <action selector="requestAction" destination="dIX-qT-oFA" id="zWE-Sz-Hvo"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="nPk-oq-TVK" id="hKG-35-8wq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="251" y="1414"/>
+        </scene>
+        <!--AlertController-->
+        <scene sceneID="Xig-Hc-dZM">
+            <objects>
+                <controller identifier="AlertController" id="wGy-rs-ETU" customClass="AlertController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Alert" id="dMf-Ba-qJz">
+                            <connections>
+                                <action selector="presentAlertStyleAction" destination="wGy-rs-ETU" id="Eki-da-bPR"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="SideBySide" id="kGx-Lb-qMS">
+                            <connections>
+                                <action selector="presentSideBySideStyleAction" destination="wGy-rs-ETU" id="pYS-VO-lny"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sheet" id="6i1-kQ-o8y">
+                            <connections>
+                                <action selector="presentSheetStyleAction" destination="wGy-rs-ETU" id="Wid-Pp-917"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="504" y="1408"/>
+        </scene>
+        <!--DataStorageController-->
+        <scene sceneID="zlv-C4-EGK">
+            <objects>
+                <controller identifier="DataStorageController" id="eJP-vO-Fvr" customClass="DataStorageController" customModule="Watch_App_Sampler_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="1408"/>
+        </scene>
+        <!--InlineMoviePlayerController-->
+        <scene sceneID="x4a-wm-QYO">
+            <objects>
+                <controller identifier="InlineMoviePlayerController" id="glc-jF-fuy" customClass="InlineMoviePlayerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="center" title="Prepare Mp3" id="OC8-o3-Xjh">
+                            <connections>
+                                <action selector="mp3PrepareAction" destination="glc-jF-fuy" id="W5G-Yl-lQw"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Prepare Mp4" id="YAJ-ib-60a">
+                            <connections>
+                                <action selector="mp4PrepareAction" destination="glc-jF-fuy" id="tfi-dN-RSQ"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="Oso-b9-S0B"/>
+                        <inlineMovie width="1" height="100" alignment="left" id="bTw-01-EOr"/>
+                        <button width="1" alignment="left" title="Ppay" id="T0r-Gm-CtN">
+                            <connections>
+                                <action selector="play" destination="glc-jF-fuy" id="C44-JR-AD6"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pause" id="KlF-WE-qvN">
+                            <connections>
+                                <action selector="pause" destination="glc-jF-fuy" id="ce2-RE-h4C"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Replay" id="BET-Uu-GbK">
+                            <connections>
+                                <action selector="playFromBeginning" destination="glc-jF-fuy" id="Hb2-B6-TUe"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="inlineMovie" destination="bTw-01-EOr" id="7fo-1o-PJP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-610" y="252"/>
+        </scene>
+        <!--BackgroundTaskController-->
+        <scene sceneID="ePv-br-LgF">
+            <objects>
+                <controller identifier="BackgroundTaskController" id="Lk4-vL-gZd" customClass="BackgroundTaskController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" height="110" alignment="left" id="9SC-1b-sko"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Reques" id="Y3q-3K-yJk">
+                            <connections>
+                                <action selector="requestAction" destination="Lk4-vL-gZd" id="r6L-6w-TZ8"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="9SC-1b-sko" id="Nf7-kr-JhF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1033" y="1408"/>
+        </scene>
+    </scenes>
+</document>
