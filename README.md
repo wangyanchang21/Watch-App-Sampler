@@ -5,6 +5,9 @@
 [![Swift](https://img.shields.io/badge/%20in-swift%204.0-orange.svg)](https://developer.apple.com/swift)
 
 
+
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/watch.jpg)
+
 A comprehensive tutorial app for WatchOS, in swift.
 
 
@@ -21,4 +24,8 @@ A comprehensive tutorial app for WatchOS, in swift.
 
 ### Menus
 
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/menum.gif)
 
+### alert
+
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/alert.gif)
