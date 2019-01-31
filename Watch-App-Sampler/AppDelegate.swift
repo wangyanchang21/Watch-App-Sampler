@@ -10,7 +10,7 @@
 
 import UIKit
 import UserNotifications
-
+import HealthKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -52,6 +52,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    
+    // HealthKit
+    func applicationShouldRequestHealthAuthorization(_ application: UIApplication) {
+        let healthStore = HKHealthStore()
+
+        guard HKHealthStore.isHealthDataAvailable() else {
+            return
+        }
+        healthStore.handleAuthorizationForExtension { (success, error) in
+            if success {
+                print("health successed")
+            }
+        }
+
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

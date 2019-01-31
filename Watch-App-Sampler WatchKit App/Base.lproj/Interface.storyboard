@@ -977,7 +977,7 @@
                         </button>
                         <separator alignment="left" id="Oso-b9-S0B"/>
                         <inlineMovie width="1" height="100" alignment="left" id="bTw-01-EOr"/>
-                        <button width="1" alignment="left" title="Ppay" id="T0r-Gm-CtN">
+                        <button width="1" alignment="left" title="Play" id="T0r-Gm-CtN">
                             <connections>
                                 <action selector="play" destination="glc-jF-fuy" id="C44-JR-AD6"/>
                             </connections>

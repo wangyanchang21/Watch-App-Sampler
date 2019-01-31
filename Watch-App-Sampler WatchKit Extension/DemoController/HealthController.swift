@@ -24,15 +24,14 @@ class HealthController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-//        let state = healthStore.authorizationStatus(for: )
-//        if state != .sharingAuthorized {
-//            print("Please Authorize In Your iPhone App")
-//            return
-//        }
 
-        let dataTypes = Set([heartRateType])
-        healthStore.requestAuthorization(toShare: nil, read: dataTypes) { (success, error) -> Void in
+        if !HKHealthStore.isHealthDataAvailable() {
+            label.setText("Not Available")
+            return
+        }
+        
+        let typesSet = Set([heartRateType])
+        healthStore.requestAuthorization(toShare: nil, read: typesSet) { (success, error) -> Void in
             guard success else {
                 self.label.setText("Not Allowed")
                 return
@@ -42,20 +41,12 @@ class HealthController: WKInterfaceController {
     
     @IBAction func fetchBtnTapped() {
         
-        if !HKHealthStore.isHealthDataAvailable() {
-            label.setText("Not Available")
-            return
-        }
-        
-        guard heartRateQuery == nil else { return }
-        
         if heartRateQuery == nil {
             // start
             heartRateQuery = self.createStreamingQuery()
             healthStore.execute(self.heartRateQuery!)
             startBtn.setTitle("Stop")
-        }
-        else {
+        } else {
             // stop
             healthStore.stop(self.heartRateQuery!)
             heartRateQuery = nil

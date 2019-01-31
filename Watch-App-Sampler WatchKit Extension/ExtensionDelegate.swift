@@ -66,9 +66,9 @@ extension ExtensionDelegate: UNUserNotificationCenterDelegate {
         center.delegate = self
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
             if granted {
-                print("success")
+                print("notification success")
             } else {
-                print("failure")
+                print("notification failure")
             }
         }
     }

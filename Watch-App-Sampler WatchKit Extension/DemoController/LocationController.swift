@@ -38,11 +38,11 @@ class LocationController: WKInterfaceController {
         super.awake(withContext: context)
         
         let state = CLLocationManager.authorizationStatus()
-        if state != .authorizedAlways || state != .authorizedWhenInUse {
+        if state != .authorizedAlways && state != .authorizedWhenInUse {
             print("Please Authorize In Your iPhone App")
+            locationManager.requestWhenInUseAuthorization()
             return
         }
-        
         locationManager.startUpdatingLocation()
     }
     
@@ -56,6 +56,9 @@ class LocationController: WKInterfaceController {
 extension LocationController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status != .authorizedAlways || status == .authorizedWhenInUse {
+            locationManager.startUpdatingLocation()
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
