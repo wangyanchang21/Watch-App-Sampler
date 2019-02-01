@@ -5,7 +5,7 @@
 //  Created by DCSnail on 2018/7/4.
 //  Copyright © 2018年 DCSnail. All rights reserved.
 //  DCSnail: https://github.com/wangyanchang21WatchOS
-//  开发教程: https://blog.csdn.net/wangyanchang21/article/details/80928126
+//  watchOS开发教程: https://blog.csdn.net/wangyanchang21/article/details/80928126
 
 import WatchKit
 import UIKit
