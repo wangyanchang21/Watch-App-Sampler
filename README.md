@@ -7,7 +7,9 @@
 
 
 A comprehensive tutorial app for WatchOS, in swift.
+
 Watch-App-Sampler has supported WatchOS 5.0 and Swift 4.2.
+
 If you want to learn how to develop WathOS app, this tutorial app is best choice.
 
 
@@ -130,6 +132,7 @@ Show the details of your attitude, floor, speed...
 ### Map
 
 Show your location in map on your watch.
+
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/map.png)
 
 ### HealthKit
@@ -163,7 +166,7 @@ Data Storage, Background Task, Types of Haptic, Pedometer...
 
 ## Thanks
 
-[watchOS-2-Sampler](https://github.com/shu223/watchOS-2-Sampler) gave me some inspiration.
+- [watchOS-2-Sampler](https://github.com/shu223/watchOS-2-Sampler) gave me some inspiration.
 
 ## Author
 
