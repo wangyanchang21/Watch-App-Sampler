@@ -10,7 +10,7 @@ A comprehensive tutorial app for WatchOS, in swift.
 
 Watch-App-Sampler has supported WatchOS 5.0 and Swift 4.2.
 
-If you want to learn how to develop WathOS app, this tutorial app is best choice.
+If you want to learn how to develop WathKit app, this tutorial app is best choice.
 
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/watch.jpg)
