@@ -1,6 +1,6 @@
 # Watch-App-Sampler
 
-[![Platform](img.shields.io/badge/platform-%20watchOS%20%7C%20iOS-lightgray.svg)]()
+[![Platform](https://img.shields.io/badge/platform-%20watchOS%20%7C%20iOS-lightgray.svg)]()
 [![Language](https://img.shields.io/badge/swift-4.2-orange.svg)](http://swift.org)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](http://mit-license.org)
 [![Contact](https://img.shields.io/badge/contact-wangyanchang21-green.svg)](https://github.com/wangyanchang21)
@@ -146,7 +146,7 @@ Read your heart rate by watch, and record the data.
 
 Read your motion activity, which is is walking, running, or cycling...
 
-![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/motionActivity.png)
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/motionActivity.PNG)
 
 ### Quatz2D
 
