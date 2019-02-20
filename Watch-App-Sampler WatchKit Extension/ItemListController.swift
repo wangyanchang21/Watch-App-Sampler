@@ -27,6 +27,7 @@ class ItemListController: WKInterfaceController {
             // Animation/Gif
             ["image": "item_type_5", "title": "Animations And Gif Play" , "ID": "AnimationController"],
             // Media
+            ["image": "item_type_6", "title": "Audio File Player" , "ID": "AudioFilePlayerController"],
             ["image": "item_type_6", "title": "Text And Voice Input" , "ID": "TextVoiceInputController"],
             ["image": "item_type_7", "title": "Media Player" , "ID": "MediaPlayerController"],
             ["image": "item_type_8", "title": "Record Audio" , "ID": "RecordController"],
@@ -76,38 +77,4 @@ class ItemListController: WKInterfaceController {
         pushController(withName: dataArray[rowIndex]["ID"]!, context: dataArray[rowIndex])
     }
 
-}
-
-
-
-
-extension ItemListController {
-    
-    func backgroundMonitor() {
-        WKExtension.shared().scheduleSnapshotRefresh(withPreferredDate: Date(), userInfo: nil) { (error) in
-            print("监听截图")
-        }
-        
-        WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(), userInfo: nil) { (error) in
-            print("监听后台刷新")
-        }
-    }
-    
-}
-
-// 后台下载监听
-extension ItemListController: URLSessionDownloadDelegate {
-    
-    func urlSession(_ session: URLSession, task: URLSessionTask, willBeginDelayedRequest request: URLRequest, completionHandler: @escaping (URLSession.DelayedRequestDisposition, URLRequest?) -> Void) {
-        print("继续下载")
-    }
-    
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        print("下载进度")
-    }
-    
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
-        print("下载完成")
-    }
-    
 }

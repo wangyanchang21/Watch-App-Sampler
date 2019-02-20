@@ -119,6 +119,7 @@ Monitor the detail of accelermeter on watch.
 ### Device Motion
 
 Monitor many types of device data on watch, like gravity, attitude, magnetism, rotationRate, acceleration...
+
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/deviceMotion.gif)
 
 ### Location
@@ -130,6 +131,7 @@ Show the details of your attitude, floor, speed...
 ### Map
 
 Show your location in map on your watch.
+
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/map.png)
 
 ### HealthKit
@@ -137,6 +139,12 @@ Show your location in map on your watch.
 Read your heart rate by watch, and record the data.
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/heartRate.PNG)
+
+### Motion Activity
+
+Read your motion activity, which is is walking, running, or cycling...
+
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/motionActivity.gif)
 
 ### Quatz2D
 
@@ -149,6 +157,7 @@ Drow complex image by Quatz2D on watch.
 Drow gradient image by UIGraphic.
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/graphic.gif)
+
 
 ### Others
 

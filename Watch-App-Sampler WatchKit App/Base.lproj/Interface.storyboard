@@ -1019,5 +1019,20 @@
             </objects>
             <point key="canvasLocation" x="1033" y="1408"/>
         </scene>
+        <!--AudioFilePlayerController-->
+        <scene sceneID="pPu-zQ-fxO">
+            <objects>
+                <controller identifier="AudioFilePlayerController" id="4QH-p5-JOG" customClass="AudioFilePlayerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Play Audio" id="JZ8-P2-cvl">
+                            <connections>
+                                <action selector="play" destination="4QH-p5-JOG" id="6Jj-hK-bYU"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-953" y="-187"/>
+        </scene>
     </scenes>
 </document>

@@ -17,6 +17,17 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         configureNotification()
+        backgroundRefresher()
+    }
+    
+    func backgroundRefresher() {
+        WKExtension.shared().scheduleSnapshotRefresh(withPreferredDate: Date(), userInfo: nil) { (error) in
+            print("scheduleSnapshotRefresh")
+        }
+
+        WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(), userInfo: nil) { (error) in
+            print("scheduleBackgroundRefresh")
+        }
     }
     
     func applicationDidBecomeActive() {
@@ -35,7 +46,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
-                backgroundTask.setTaskCompletedWithSnapshot(false)
+                backgroundTask.setTaskCompletedWithSnapshot(true)
                 print("WKApplicationRefreshBackgroundTask")
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
@@ -43,15 +54,15 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
                 print("WKSnapshotRefreshBackgroundTask")
             case let connectivityTask as WKWatchConnectivityRefreshBackgroundTask:
                 // Be sure to complete the connectivity task once you’re done.
-                connectivityTask.setTaskCompletedWithSnapshot(false)
+                connectivityTask.setTaskCompletedWithSnapshot(true)
                 print("WKWatchConnectivityRefreshBackgroundTask")
             case let urlSessionTask as WKURLSessionRefreshBackgroundTask:
                 // Be sure to complete the URL session task once you’re done.
-                urlSessionTask.setTaskCompletedWithSnapshot(false)
+                urlSessionTask.setTaskCompletedWithSnapshot(true)
                 print("WKURLSessionRefreshBackgroundTask")
             default:
                 // make sure to complete unhandled task types
-                task.setTaskCompletedWithSnapshot(false)
+                task.setTaskCompletedWithSnapshot(true)
                 print("Default")
             }
         }

@@ -42,7 +42,8 @@ class RequestSessionController: WKInterfaceController {
         let index = Int(arc4random() % 10)
         let url = urlArrary[index]
         
-        let session = URLSession(configuration: URLSessionConfiguration.default)
+//        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: OperationQueue.main)
         task = session.dataTask(with: url as URL) { (data, res, error) -> Void in
             if let newData = data {
                 self.updateImage(data: newData)
@@ -64,6 +65,20 @@ class RequestSessionController: WKInterfaceController {
             self.image.setImage(UIImage(data: data))
         }
     }
+}
+
+
+extension RequestSessionController: URLSessionTaskDelegate, URLSessionDataDelegate {
     
-    
+    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void){
+        print("didReceive challenge")
+        completionHandler(.performDefaultHandling, nil)
+    }
+    func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
+        print("urlSessionDidFinishEvents")
+    }
+    func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+        print("didComplete")
+    }
+
 }
