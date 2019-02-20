@@ -1,14 +1,16 @@
 # Watch-App-Sampler
 
-[![Platform](https://img.shields.io/badge/platform- watchOS | iOS-lightgray.svg)]()
+[![Platform](https://img.shields.io/badge/platform-%20watchOS%20%7C%20iOS-lightgray.svg)]()
 [![Language](https://img.shields.io/badge/swift-4.2-orange.svg)](http://swift.org)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](http://mit-license.org)
 [![Contact](https://img.shields.io/badge/contact-wangyanchang21-green.svg)](https://github.com/wangyanchang21)
 
 
 A comprehensive tutorial app for WatchOS, in swift.
+
 Watch-App-Sampler has supported WatchOS 5.0 and Swift 4.2.
-If you want to learn how to develop WathOS app, this tutorial app is best choice.
+
+If you want to learn how to develop WathKit app, this tutorial app is best choice.
 
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/watch.jpg)
@@ -172,7 +174,7 @@ Data Storage, Background Task, Types of Haptic, Pedometer...
 
 ## Thanks
 
-[watchOS-2-Sampler](https://github.com/shu223/watchOS-2-Sampler) gave me some inspiration.
+- [watchOS-2-Sampler](https://github.com/shu223/watchOS-2-Sampler) gave me some inspiration.
 
 ## Author
 
