@@ -22,7 +22,7 @@ Watch-App-Sampler 支持 WatchOS 5.0以及Swift 4.2.
 
 ## 内容
 
-[English](https://github.com/wangyanchang21/Watch-App-Sampler)/[中文](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/README_chinese.md)
+[English introduce](https://github.com/wangyanchang21/Watch-App-Sampler) / [中文介绍](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/README_chinese.md)
 
 
 ### 列表（Table）
