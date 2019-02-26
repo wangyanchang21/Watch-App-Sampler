@@ -6,189 +6,185 @@
 [![Contact](https://img.shields.io/badge/contact-wangyanchang21-green.svg)](https://github.com/wangyanchang21)
 
 
-A nice tutorial app for WatchOS, in swift.
-
-Watch-App-Sampler has supported WatchOS 5.0 and Swift 4.2.
-
-If you want to learn how to develop WathKit app, this tutorial app is the best choice.
-
+一个纯Swift开发的，功能十分齐全的 WatchOS开发教程 App。
+Watch-App-Sampler 支持 WatchOS 5.0以及Swift 4.2.
+如果你学习或者准备开发一款 WatchKit App，那么这个项目将会是你的最佳选择。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/watch.jpg)
 
 
-## Getting Started
+## 入门手册
 
 - [Apple Watch Programming Guide](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html) - Official apple watch programming guide by Apple.
 - [WatchOS开发教程](https://blog.csdn.net/wangyanchang21/article/details/80928126)
 
-## Contents
+## 内容
 
-### Table
+### 列表（Table）
 
-Table and ItemRow.
+列表控件，像 iOS中的 UITableView。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/table.gif)
 
-### Notification
+### 通知（Notification）
 
-Notification development contains static and dynamic Interface.
+Apple Watch的通知功能开发，其中包括静态通知页面和动态通知页面。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/notification.gif)
 
-### Complications
+### 表盘功能（Complications）
 
-There are 33 templates for apple watch.
+表盘功能开发，自定义你的 Watch App的表盘控件。这里共有33中表盘模板。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/complication.png)
 
-### Connectivity
+### 通信（Connectivity）
 
-Make a connectivity between watch to iPhone, send and recieve messages.
+在 iPhone和 Apple Watch之间的通信，收发消息、文件等。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/connectivity.gif)
 
-### Net Request
+### 网络请求（Net Request）
 
-Show image until it has been download completely.
+通过网络请求下载图片，完成后并展示图片。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/request.gif)
 
-### Menus
+### 菜单（Menus）
 
-Menus and actions.
+菜单控件和对应的响应事件。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/menum.gif)
 
 
-### GestureRecognizer
+### 手势（GestureRecognizer）
 
-The type of Gesture, including TapGesture, LongPressGesture, SwipeGesture, PanGesture.
+为 Apple Watch添加手势操作，手势类型包括轻击手势、长按手势、轻扫手势、平移手势。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/gesture.gif)
 
 
-### Alert
+### 警告（Alert）
 
-Three alert style and AlertAction.
+三种警告类型和对应的响应事件。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/alert.gif)
 
-### Picker
+### 选择器（Picker）
 
-The Style of picker and PickerItem.
+选择器的类型和选择器项目。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/picker.gif)
 
-
-Progress made by picker and images.
+通过选择器和图片来实现进度条的动画效果。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/progress.gif)
 
-### Animation
+### 动画（Animation）
 
-Make a animation to WKInterfaceObject.
+Apple Watch对 WKInterfaceObject实现动画效果。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/animation.gif)
 
-### Text input and Voice input
+### 文字输入和语音输入（Text input and Voice input）
 
-Input text in Voice or handwriting.
+通过语音和手写进行文字输入。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/textInput.gif)
 
-### Voice Player
+### 声音播放器（Voice Player）
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/voicePlayer.gif)
 
-### Movie Player
+### 视频播放器（Movie Player）
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/moviePlayer.gif)
 
-### Inline Movie Player
+### 在线播放器（Inline Movie Player）
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/inlinePlayer.gif)
 
-### Recorder
+### 录音机（Recorder）
 
-Record voice and save voice.
+Apple Watch中录音并保存。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/record.gif)
 
-### Tel or SMS 
+### 打电话和发短信（Tel or SMS ）
 
-Call or send SMS by watch.
+通过 Apple Watch打电话和发短信。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/openUrl.gif)
 
-### Accelerometer
+### 加速计（Accelerometer）
 
-Monitor the detail of accelermeter on watch.
+对 Apple Watch上的加速计数据详情进行监控。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/accelerometer.png)
 
-### Device Motion
+### 运动传感器（Device Motion）
 
-Monitor many types of device data on watch, like gravity, attitude, magnetism, rotationRate, acceleration...
+监控手表上的多种类型的设备数据，如重力，姿态，磁力，旋转速度，加速度......
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/deviceMotion.gif)
 
-### Location
+### 定位（Location）
 
-Get the details of your attitude, floor, speed...
+获取你的地理位置、楼层、速度等等。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/location.png)
 
-### Map
+### 地图（Map）
 
-Use the map feature on your watch.
+通过 Watch使用地图功能。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/map.png)
 
-### HealthKit
+### 健康（HealthKit）
 
-Read your heart rate by watch, and record the data.
+记录你的心率、读取你的心率，以及其他健康数据。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/heartRate.PNG)
 
-### Motion Activity
+### 运动状态（Motion Activity）
 
-Read your motion activity, which is is walking, running, or cycling...
+读取你的运动状态，包括行走、跑步、骑行等。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/motionActivity.PNG)
 
 ### Quatz2D
 
-Drow complex image by Quatz2D on watch.
+利用 Quatz2D画出图形。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/quatz.gif)
 
-### Gradation
+### 渐变（Gradation）
 
-Drow gradient image by UIGraphic.
+通过 UIGraphic画出渐变颜色的图片。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/graphic.gif)
 
 
-### Others
+### 其他
 
-Data Storage, Background Task, Types of Haptic, Pedometer...
+数据存储、后台任务运行、震动反馈、计步器等功能...
 
 
-## Prerequisites
+## 必备条件
 
 - Xcode 10+
-- iOS 10 or later
-- watchOS 4.0 or later
+- iOS 10.0及以后
+- watchOS 4.0及以后
 
-## Thanks
+## 感谢
 
-- [watchOS-2-Sampler](https://github.com/shu223/watchOS-2-Sampler) gave me some inspiration.
+- [watchOS-2-Sampler](https://github.com/shu223/watchOS-2-Sampler)对我的激发.
 
-## Author
+## 作者
 
 - DCSnail, [wangyanchang21](https://github.com/wangyanchang21)
 
-## License
+## 执照
 
-Watch-App-Sampler is licensed under the [MIT License](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/LICENSE).
+Watch-App-Sampler获取了MIT许可证的许可。
 
