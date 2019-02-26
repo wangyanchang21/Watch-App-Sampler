@@ -23,6 +23,8 @@ If you want to learn how to develop WathKit app, this tutorial app is the best c
 
 ## Contents
 
+[English introduce](https://github.com/wangyanchang21/Watch-App-Sampler) / [中文介绍](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/README_chinese.md)
+
 ### Table
 
 Table and ItemRow.
