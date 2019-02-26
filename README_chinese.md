@@ -7,7 +7,9 @@
 
 
 一个纯Swift开发的，功能十分齐全的 WatchOS开发教程 App。
+
 Watch-App-Sampler 支持 WatchOS 5.0以及Swift 4.2.
+
 如果你学习或者准备开发一款 WatchKit App，那么这个项目将会是你的最佳选择。
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/watch.jpg)
@@ -19,6 +21,9 @@ Watch-App-Sampler 支持 WatchOS 5.0以及Swift 4.2.
 - [WatchOS开发教程](https://blog.csdn.net/wangyanchang21/article/details/80928126)
 
 ## 内容
+
+[English](https://github.com/wangyanchang21/Watch-App-Sampler)/[中文](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/README_chinese.md)
+
 
 ### 列表（Table）
 
