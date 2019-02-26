@@ -62,7 +62,7 @@ Menus and actions.
 
 ### GestureRecognizer
 
-The type of Gesture, including TapGesture, LongPressGesture, SwipeGesture, PanGesture
+The type of Gesture, including TapGesture, LongPressGesture, SwipeGesture, PanGesture.
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/gesture.gif)
 
