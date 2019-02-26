@@ -6,7 +6,7 @@
 [![Contact](https://img.shields.io/badge/contact-wangyanchang21-green.svg)](https://github.com/wangyanchang21)
 
 
-A comprehensive tutorial app for WatchOS, in swift.
+A nice tutorial app for WatchOS, in swift.
 
 Watch-App-Sampler has supported WatchOS 5.0 and Swift 4.2.
 
@@ -58,6 +58,14 @@ Show image until it has been download completely.
 Menus and actions.
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/menum.gif)
+
+
+### GestureRecognizer
+
+The type of Gesture, including TapGesture, LongPressGesture, SwipeGesture, PanGesture
+
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/gesture.gif)
+
 
 ### Alert
 

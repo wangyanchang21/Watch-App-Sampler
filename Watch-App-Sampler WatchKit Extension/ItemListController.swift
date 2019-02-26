@@ -20,6 +20,7 @@ class ItemListController: WKInterfaceController {
         return [
             
             ["image": "item_type_0", "title": "Menu Action And Controller Life Cycle" , "ID": "MenusController"],
+            ["image": "item_type_1", "title": "Gesture Recongnizer" , "ID": "GestureRecongnizerController"],
             ["image": "item_type_2", "title": "Alert Style" , "ID": "AlertController"],
             // Picker
             ["image": "item_type_3", "title": "Picker Styles" , "ID": "PickerController"],

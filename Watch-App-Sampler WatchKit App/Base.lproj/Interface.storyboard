@@ -1034,5 +1034,61 @@
             </objects>
             <point key="canvasLocation" x="-953" y="-187"/>
         </scene>
+        <!--GestureRecognizerController-->
+        <scene sceneID="IVu-90-og4">
+            <objects>
+                <controller identifier="GestureRecognizerController" id="t9P-Ef-1eh" customClass="GestureRecognizerController" customModule="Watch_App_Sampler_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="71" alignment="left" text="Tap Me" textAlignment="center" numberOfLines="0" id="doN-Rg-hjK">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="m8c-QM-djH">
+                                    <connections>
+                                        <action selector="tapAction:" destination="t9P-Ef-1eh" id="Zvd-WK-waK"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label width="1" height="64" alignment="left" text="LongPress Me" textAlignment="center" numberOfLines="0" id="cB8-Wy-7Ky">
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer id="lsQ-h1-Oec">
+                                    <connections>
+                                        <action selector="longPressAction:" destination="t9P-Ef-1eh" id="KiL-TT-Atb"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label width="1" height="75" alignment="left" text="Swipe Me" textAlignment="center" numberOfLines="0" id="qAd-mf-2l7">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer id="ArF-zL-1JY">
+                                    <connections>
+                                        <action selector="swipeAction:" destination="t9P-Ef-1eh" id="S5e-cB-Q2F"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label width="1" height="75" alignment="left" text="Pan Me" textAlignment="center" numberOfLines="0" id="WNK-3w-vIK">
+                            <gestureRecognizers>
+                                <panGestureRecognizer id="NNz-bU-N2C">
+                                    <connections>
+                                        <action selector="panAction:" destination="t9P-Ef-1eh" id="tTI-XU-zrb"/>
+                                    </connections>
+                                </panGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="longPressLabel" destination="cB8-Wy-7Ky" id="R98-Ci-3N1"/>
+                        <outlet property="panLabel" destination="WNK-3w-vIK" id="duQ-Q9-iFw"/>
+                        <outlet property="swipeLabel" destination="qAd-mf-2l7" id="GYS-Ea-apw"/>
+                        <outlet property="tapLabel" destination="doN-Rg-hjK" id="YIN-52-kqB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-297" y="252"/>
+        </scene>
     </scenes>
 </document>

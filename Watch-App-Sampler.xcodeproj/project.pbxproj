@@ -31,6 +31,7 @@
 		5F2AA6B720D3C31500D0DE5D /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2AA6B620D3C31500D0DE5D /* RecordController.swift */; };
 		5F3FB9122200427100F30007 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5F3FB9112200427000F30007 /* loading.gif */; };
 		5F55F884221D655900323342 /* AudioFilePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55F883221D655900323342 /* AudioFilePlayerController.swift */; };
+		5F55F886221D810B00323342 /* GestureRecognizerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55F885221D810B00323342 /* GestureRecognizerController.swift */; };
 		5F6C763520E4BC10006DEA42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2AA68B20D3ABF700D0DE5D /* Assets.xcassets */; };
 		5F6C763720E4CFDD006DEA42 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C763620E4CFDD006DEA42 /* AlertController.swift */; };
 		5F76440120D91669003AB207 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76440020D91669003AB207 /* MessageController.swift */; };
@@ -131,6 +132,7 @@
 		5F2AA6B620D3C31500D0DE5D /* RecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
 		5F3FB9112200427000F30007 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		5F55F883221D655900323342 /* AudioFilePlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFilePlayerController.swift; sourceTree = "<group>"; };
+		5F55F885221D810B00323342 /* GestureRecognizerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerController.swift; sourceTree = "<group>"; };
 		5F680FBC20F714B2001E0434 /* Watch-App-Sampler WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch-App-Sampler WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		5F6C763620E4CFDD006DEA42 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		5F76440020D91669003AB207 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				5F76440A20DA62A7003AB207 /* MenusController.swift */,
+				5F55F885221D810B00323342 /* GestureRecognizerController.swift */,
 				5F6C763620E4CFDD006DEA42 /* AlertController.swift */,
 				5FD7890820DBB4E100381EFE /* PickerController.swift */,
 				5F2AA6B020D3BFCA00D0DE5D /* ProgressController.swift */,
@@ -508,6 +511,7 @@
 				5F2AA6B520D3C25D00D0DE5D /* TextVoiceInputController.swift in Sources */,
 				5FF489C0213E74360082DB20 /* KeychainHelper.swift in Sources */,
 				5F55F884221D655900323342 /* AudioFilePlayerController.swift in Sources */,
+				5F55F886221D810B00323342 /* GestureRecognizerController.swift in Sources */,
 				5FD7890F20DCF56C00381EFE /* HapticTypeController.swift in Sources */,
 				5F2AA6AD20D3BF2F00D0DE5D /* ComplicationController.swift in Sources */,
 				5FD7890D20DCE02100381EFE /* AnimationController.swift in Sources */,
