@@ -12,6 +12,8 @@ Watch-App-Sampler 支持 WatchOS 5.0以及Swift 4.2.
 
 如果你学习或者准备开发一款 WatchKit App，那么这个项目将会是你的最佳选择。
 
+[English introduce](https://github.com/wangyanchang21/Watch-App-Sampler) / [中文介绍](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/README_chinese.md)
+
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/watch.jpg)
 
 
@@ -21,9 +23,6 @@ Watch-App-Sampler 支持 WatchOS 5.0以及Swift 4.2.
 - [WatchOS开发教程](https://blog.csdn.net/wangyanchang21/article/details/80928126)
 
 ## 内容
-
-[English introduce](https://github.com/wangyanchang21/Watch-App-Sampler) / [中文介绍](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/README_chinese.md)
-
 
 ### 列表（Table）
 
@@ -183,7 +182,7 @@ Apple Watch中录音并保存。
 
 ## 感谢
 
-- [watchOS-2-Sampler](https://github.com/shu223/watchOS-2-Sampler)对我的激发.
+- [watchOS-2-Sampler](https://github.com/shu223/watchOS-2-Sampler)
 
 ## 作者
 

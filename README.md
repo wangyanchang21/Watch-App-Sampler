@@ -12,6 +12,7 @@ Watch-App-Sampler has supported WatchOS 5.0 and Swift 4.2.
 
 If you want to learn how to develop WathKit app, this tutorial app is the best choice.
 
+[English introduce](https://github.com/wangyanchang21/Watch-App-Sampler) / [中文介绍](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/README_chinese.md)
 
 ![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/watch.jpg)
 
@@ -22,8 +23,6 @@ If you want to learn how to develop WathKit app, this tutorial app is the best c
 - [WatchOS开发教程](https://blog.csdn.net/wangyanchang21/article/details/80928126)
 
 ## Contents
-
-[English introduce](https://github.com/wangyanchang21/Watch-App-Sampler) / [中文介绍](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/README_chinese.md)
 
 ### Table
 
