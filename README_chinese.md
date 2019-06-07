@@ -1,14 +1,14 @@
 # Watch-App-Sampler
 
 [![Platform](https://img.shields.io/badge/platform-%20watchOS%20%7C%20iOS-lightgray.svg)]()
-[![Language](https://img.shields.io/badge/swift-4.2-orange.svg)](http://swift.org)
+[![Language](https://img.shields.io/badge/swift-5.0-orange.svg)](http://swift.org)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](http://mit-license.org)
 [![Contact](https://img.shields.io/badge/contact-wangyanchang21-green.svg)](https://github.com/wangyanchang21)
 
 
 一个纯Swift开发的，功能十分齐全的 WatchOS开发教程 App。
 
-Watch-App-Sampler 支持 WatchOS 5.0以及Swift 4.2.
+Watch-App-Sampler 支持 WatchOS 5.0以及 Swift 5.0.
 
 如果你学习或者准备开发一款 WatchKit App，那么这个项目将会是你的最佳选择。
 
@@ -176,9 +176,10 @@ Apple Watch中录音并保存。
 
 ## 必备条件
 
+- Swift 5.0
 - Xcode 10+
-- iOS 10.0及以后
-- watchOS 4.0及以后
+- iOS 10.0+
+- watchOS 5.0+
 
 ## 感谢
 

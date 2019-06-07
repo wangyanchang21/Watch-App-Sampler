@@ -145,39 +145,35 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             template.line1ImageProvider = CLKImageProvider(onePieceImage: UIImage(named: "complicationIcon")!)
             template.line1ImageProvider.tintColor = .orange
             entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: template)
-            
+
+            // following templates are addition to watchOS 5.0
         case .graphicCorner:
-            if #available(watchOSApplicationExtension 5.0, *) {
                 let template = CLKComplicationTemplateGraphicCornerGaugeText()
                 template.leadingTextProvider = CLKSimpleTextProvider(text: "GC1")
                 template.trailingTextProvider = CLKSimpleTextProvider(text: "GC2")
                 template.outerTextProvider = CLKSimpleTextProvider(text: "100°C")
                 entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: template)
-            }
+
         case .graphicBezel:
-            if #available(watchOSApplicationExtension 5.0, *) {
                 let template = CLKComplicationTemplateGraphicBezelCircularText()
                 template.textProvider = CLKSimpleTextProvider(text: "GB")
                 let circularTemplate = CLKComplicationTemplateGraphicCircularImage()
                 circularTemplate.imageProvider = CLKFullColorImageProvider.init(fullColorImage: UIImage(named: "complicationIcon")!)
                 template.circularTemplate = circularTemplate
                 entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: template)
-            }
+
         case .graphicCircular:
-            if #available(watchOSApplicationExtension 5.0, *) {
                 let template = CLKComplicationTemplateGraphicCircularOpenGaugeRangeText()
                 template.centerTextProvider = CLKSimpleTextProvider(text: "GCL")
                 template.leadingTextProvider = CLKSimpleTextProvider(text: "GCL1")
                 template.trailingTextProvider = CLKSimpleTextProvider(text: "GCL2")
                 entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: template)
-            }
+
         case .graphicRectangular:
-            if #available(watchOSApplicationExtension 5.0, *) {
                 let template = CLKComplicationTemplateGraphicRectangularLargeImage()
                 template.textProvider = CLKSimpleTextProvider(text: "GR")
                 template.imageProvider = CLKFullColorImageProvider.init(fullColorImage: UIImage(named: "complicationIcon")!)
                 entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: template)
-            }
         default:
             break
         }
