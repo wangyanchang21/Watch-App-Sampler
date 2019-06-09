@@ -149,13 +149,13 @@ Use the map feature on your watch.
 
 Read your heart rate by watch, and record the data.
 
-![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/heartRate.PNG)
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/heartRate.png)
 
 ### Motion Activity
 
 Read your motion activity, which is is walking, running, or cycling...
 
-![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/motionActivity.PNG)
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/motionActivity.png)
 
 ### Quatz2D
 

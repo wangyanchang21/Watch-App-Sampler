@@ -148,13 +148,13 @@ Apple Watch中录音并保存。
 
 记录你的心率、读取你的心率，以及其他健康数据。
 
-![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/heartRate.PNG)
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/heartRate.png)
 
 ### 运动状态（Motion Activity）
 
 读取你的运动状态，包括行走、跑步、骑行等。
 
-![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/motionActivity.PNG)
+![](https://github.com/wangyanchang21/Watch-App-Sampler/blob/master/image/motionActivity.png)
 
 ### Quatz2D
 
