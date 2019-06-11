@@ -20,7 +20,7 @@ If you want to learn how to develop WathKit app, this tutorial app is the best c
 ## Getting Started
 
 - [Apple Watch Programming Guide](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html) - Official apple watch programming guide by Apple.
-- [WatchOS开发教程](https://blog.csdn.net/wangyanchang21/article/details/80928126)
+- [WatchOS开发教程](https://wangyanchang21.github.io/2018/WatchOS%E5%BC%80%E5%8F%91%E6%95%99%E7%A8%8B%E4%B9%8B%E4%B8%80/)
 
 ## Contents
 
